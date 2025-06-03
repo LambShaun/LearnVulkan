@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "CMake Default", 
+          
+            "compilerPath": "", 
+    
+            "intelliSenseMode": "${default}", 
+
+            "cStandard": "c17",
+            "cppStandard": "c++17", 
+
+            "configurationProvider": "ms-vscode.cmake-tools",
+
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+            ]
+        }
+    ],
+    "version": 4 
+}

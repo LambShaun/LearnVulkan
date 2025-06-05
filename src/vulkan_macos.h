@@ -6,13 +6,13 @@
 #include <vulkan/vulkan.h>
 
 #ifndef VK_KHR_PORTABILITY_ENUMERATION_EXTENSION_NAME
-#define VK_KHR_PORTABILITY_ENUMERATION_EXTENSION_NAME
-"VK_KHR_portability_enumeration"
+#define VK_KHR_PORTABILITY_ENUMERATION_EXTENSION_NAME                          \
+  "VK_KHR_portability_enumeration"
 #endif
 
 #ifndef VK_KHR_GET_PHYSICAL_DEVICE_PROPERTIES_2_EXTENSION_NAME
-#define VK_KHR_GET_PHYSICAL_DEVICE_PROPERTIES_2_EXTENSION_NAME
-    "VK_KHR_get_physical_device_properties2"
+#define VK_KHR_GET_PHYSICAL_DEVICE_PROPERTIES_2_EXTENSION_NAME                 \
+  "VK_KHR_get_physical_device_properties2"
 #endif
 
 #ifndef VK_KHR_PORTABILITY_SUBSET_EXTENSION_NAME
@@ -25,9 +25,9 @@
 
 #ifdef __APPLE__
 
-    // Adds required instance extensions for macOS.
-    inline void
-    addMacOSInstanceRequiredExtensions(std::vector<const char *> &extensions) {
+// Adds required instance extensions for macOS.
+inline void
+addMacOSInstanceRequiredExtensions(std::vector<const char *> &extensions) {
   extensions.push_back(VK_KHR_PORTABILITY_ENUMERATION_EXTENSION_NAME);
   extensions.push_back(VK_KHR_GET_PHYSICAL_DEVICE_PROPERTIES_2_EXTENSION_NAME);
 }

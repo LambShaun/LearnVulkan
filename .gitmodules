@@ -7,9 +7,9 @@
 [submodule "src/ThirdParty/glm"]
 	path = src/ThirdParty/glm
 	url = https://github.com/g-truc/glm.git
-[submodule "src/ThirdParty/VMA"]
-	path = src/ThirdParty/VMA
-	url = https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator.git
 [submodule "src/ThirdParty/stb_image"]
 	path = src/ThirdParty/stb_image
 	url = https://github.com/nothings/stb.git
+[submodule "src/ThirdParty/VulkanMemoryAllocator"]
+	path = src/ThirdParty/VulkanMemoryAllocator
+	url = https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator.git

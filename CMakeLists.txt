@@ -7,6 +7,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_subdirectory(src/ThirdParty/glfw)
 add_subdirectory(src/ThirdParty/glm)
 
+set(VMA_STATIC_VULKAN_LIBRARY OFF CACHE BOOL "Do not link Vulkan statically into VMA")
+set(VMA_DYNAMIC_VULKAN_FUNCTIONS OFF CACHE BOOL "Do not fetch Vulkan functions dynamically")
+set(BUILD_SHARED_LIBS OFF CACHE BOOL "Build VMA as a static library")
+add_subdirectory(src/ThirdParty/VulkanMemoryAllocator)
+
+
 if(DEFINED ENV{VULKAN_SDK})
     message(STATUS "CMake: Using VULKAN_SDK environment variable: $ENV{VULKAN_SDK}")
 else()

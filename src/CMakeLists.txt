@@ -4,6 +4,7 @@ set(APP_SOURCES
 
 add_executable(VulkanApp ${APP_SOURCES})
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/textures DESTINATION "${CMAKE_BINARY_DIR}")
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/models DESTINATION "${CMAKE_BINARY_DIR}")
 
 add_subdirectory(shaders)
 
@@ -17,7 +18,7 @@ endif()
 target_include_directories(VulkanApp PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR} 
     ${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/stb_image 
-
+    ${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/tinyobjloader
 )
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")

@@ -3,6 +3,7 @@ set(APP_SOURCES
 )
 
 add_executable(VulkanApp ${APP_SOURCES})
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/textures DESTINATION "${CMAKE_BINARY_DIR}")
 
 add_subdirectory(shaders)
 
